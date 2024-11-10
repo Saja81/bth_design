@@ -1,5 +1,5 @@
 body {
-  background-color: pink;
+  background-color: silver;
 }
 
 * {
@@ -48,6 +48,12 @@ body {
 }
 
 /* Title */
+
+.logo-image {
+  width: 150px; /* Justera storlek */
+  height: auto; /* Bevara proportioner */
+  border-radius: 50%;
+}
 
 .title,
 .logo {
