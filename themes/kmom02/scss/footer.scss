@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $navbar-footer-background; // Din bakgrundsfärg för fotern
+  padding: 20px; // Justera padding om det behövs
+  position: relative; // För att säkerställa korrekt placering av fotern
+  width: 100%; // Se till att fotern täcker hela bredden på sidan
+  box-sizing: border-box; // För att inkludera padding i bredden
+  bottom: 0; // Sätt fotern vid botten om sidan är kort
+}

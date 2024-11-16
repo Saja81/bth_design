@@ -1,11 +1,11 @@
 ---
-Logo: assets/img/me.jpg
-Tagline: My portfolio.
+Logo: assets/img/icon.jpg
+Tagline: Min portfolio.
 Social:
   - title: Link till kursens repo på github.
     url: https://github.com/Saja81/bth_design
-    icon: github
+    icon: fab fa-github
   - title: Link till min LinkedIn.
     url: https://www.linkedin.com/in/sandrajakobsson81/
-    icon: linkedin
+    icon: fab fa-linkedin
 ---

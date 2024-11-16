@@ -1,8 +1,10 @@
+@charset "UTF-8";
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -420,10 +422,16 @@ template {
     display: block;
   }
 }
-main {
-  background-color: #2c3e50;
-  color: #bdc3c7;
-  padding: 40px;
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bdc3c7;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 0;
 }
 
 blockquote {
@@ -6632,9 +6640,71 @@ readers do not read off random characters that represent icons */
   box-sizing: border-box;
 }
 
+/* Body-stilar */
 body {
   font-family: "Edu AU VIC WA NT Pre", sans-serif;
+  color: #bdc3c7; /* Din textfärg */
+  line-height: 1.6;
+  min-height: 100vh; /* Säkerställ att body fyller hela höjden */
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Förhindra horisontell rullning */
+}
+
+.main {
+  background-color: #2c3e50;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.main-content {
   background-color: #2c3e50;
   color: #bdc3c7;
+  padding: 40px;
+  width: 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #5d6d7e;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   line-height: 1.6;
+  color: #bdc3c7;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4, h5, h6 {
+  font-size: 1.25rem;
 }
