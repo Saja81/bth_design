@@ -1,0 +1,8 @@
+@use 'variables' as *;
+
+// Main content
+main {
+  background-color: $primary-background;
+  color: $primary-text;
+  padding: 40px;
+}

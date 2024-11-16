@@ -1,5 +1,29 @@
-$font-color: #000;
-$font-alternative-color: #fff;
-$accent-color: #ee6c4d;
-$background-color: #3d5a80;
-$background-alternative-color: #e0fbfc;
+// $font-color: #000;
+// $font-alternative-color: #fff;
+// $accent-color: #ee6c4d;
+// $background-color: #3d5a80;
+// $background-alternative-color: #e0fbfc;
+
+// Basfärger
+$midnight-blue: #2c3e50;   // En djup och elegant blå som nästan är svart
+$dark-gray: #5d6d7e;       // Mörkgrå för kontrast och balans
+$light-gray: #bdc3c7;      // Ljusgrå för bakgrunder och sektioner
+$silver: #ecf0f1;          // Ljus silverton för subtil elegans
+$gold: #d4af37;            // Guld för en lyxig och varm accent
+$gold-dark: #B7905E;       // Mörkare guld för djupare accent
+
+// Primära färger
+$primary-background: $midnight-blue;    // Bakgrund för main content
+$primary-text: $light-gray;             // Textfärg för huvudtexten i main
+
+// Navbar och Footer
+$navbar-footer-background: $light-gray; // Bakgrund för navbar och footer
+$navbar-footer-link: $midnight-blue;    // Länkfärg för navbar och footer
+$navbar-footer-link-hover: $dark-gray;  // Hover-färg för navbar och footer länkar
+
+// Rubriker
+$heading-color: $gold;  // Färg för rubriker (h1, h2, h3 etc.)
+
+// Accentuering
+$accent-color: $gold;      // För eventuella accentfärger (som knappar, ikoner, etc.)
+$accent-dark-color: $gold-dark;  // Mörkare guld för när du vill ha en dämpad accent
