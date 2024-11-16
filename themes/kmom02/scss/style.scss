@@ -3,6 +3,16 @@
 @use 'blockquotes' as *;
 @use 'code' as *;
 @use 'mobile-menu' as *;
+// FontAwesome imports
+@use '../../shared/fontawesome/scss/fontawesome' as fa;
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@use '../../shared/fontawesome/scss/brands' as fa-brands;
+@use '../../shared/fontawesome/scss/solid' as fa-solid;
+@use '../../shared/fontawesome/scss/regular' as fa-regular;
+
+// Importera Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
 
 
 body {
@@ -11,4 +21,9 @@ body {
 
 * {
   color: $font-color;
+}
+
+// Använd Google Font på p-element
+p {
+  font-family: 'Edu AU VIC WA NT Pre', sans-serif; // Sätt denna font på p-element
 }
