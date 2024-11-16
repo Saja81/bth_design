@@ -1,0 +1,14 @@
+@use '../../node_modules/normalize.css/normalize' as *;
+@use 'variables' as *;
+@use 'blockquotes' as *;
+@use 'code' as *;
+@use 'mobile-menu' as *;
+
+
+body {
+  background-color: $background-color;
+}
+
+* {
+  color: $font-color;
+}
