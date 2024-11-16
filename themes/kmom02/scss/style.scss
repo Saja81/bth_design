@@ -97,3 +97,11 @@ h3 {
 h4, h5, h6 {
   font-size: 1.25rem; // Justera storlek på h4, h5, h6
 }
+
+/* styles.scss */
+img.sandra-img {
+  width: 50%;   /* Sätt bredden till 50% av förälderelementets bredd */
+  max-width: 400px; /* Maximalt bredd på 400px */
+  height: auto;   /* Låt höjden justeras automatiskt för att behålla proportioner */
+  border-radius: 50%; /* Valfritt: Rundade hörn för en mjukare look */
+}
