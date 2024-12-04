@@ -1,0 +1,18 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="main-content">
+            <h1>{{ title }}</h1> <!-- Titel från YAML-frontmatter -->
+            <div class="technologies-grid">
+                <!-- Här kommer vi att visa teknologilistan -->
+                {{ content }} <!-- Här renderas själva innehållet från index.md -->
+            </div>
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+</html>

@@ -6,6 +6,8 @@
 @use 'blockquotes' as *;
 @use 'code' as *;
 @use 'mobile-menu' as *;
+@use 'technologies' as *;
+
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
