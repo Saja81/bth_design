@@ -1,12 +1,14 @@
-@use '../../node_modules/normalize.css/normalize' as *;
-@use 'variables' as *;
-@use 'header' as *;
-@use 'footer' as *;
-@use 'main' as *;
-@use 'blockquotes' as *;
-@use 'code' as *;
-@use 'mobile-menu' as *;
-@use 'technologies' as *;
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'main';
+@import 'blockquotes';
+@import 'code';
+@import 'mobile-menu';
+@import 'technologies';
+
+
 
 
 @import '../../shared/fontawesome/scss/fontawesome';
@@ -17,6 +19,10 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+// .tech {
+//   background-color: rgb(244, 19, 56);
+// }
 
 // Global resets och normalisering
 *,
@@ -30,7 +36,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 /* Body-stilar */
 body {
   font-family: 'Edu AU VIC WA NT Pre', sans-serif;
-  color: $primary-text;
+  // color: $primary-text;
+  color: #bdc3c7;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -39,7 +46,8 @@ body {
 }
 
 .main {
-  background-color: $primary-background;
+  // background-color: $primary-background;
+  background-color: #2c3e50;
   padding: 40px;
   display: flex;
   justify-content: center;
@@ -47,8 +55,10 @@ body {
 }
 
 .main-content {
-  background-color: $primary-background;
-  color: $primary-text;
+  // background-color: $primary-background;
+  background-color: #2c3e50;
+  // color: $primary-text;
+  color: #bdc3c7;
   padding: 40px;
   width: 50%;
   max-width: 1200px;
@@ -64,11 +74,13 @@ body {
 a {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  color: $navbar-footer-link;
+  // color: $navbar-footer-link;
+  color: #2c3e50;
   transition: color 0.3s ease;
 
   &:hover {
-    color: $navbar-footer-link-hover;
+    // color: $navbar-footer-link-hover;
+    color: #5d6d7e;
   }
 }
 
@@ -76,7 +88,8 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: $primary-text;
+  // color: $primary-text;
+  color: #bdc3c7;
   margin-bottom: 20px;
 }
 
@@ -88,7 +101,8 @@ h5,
 h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  color: $heading-color;
+  // color: $heading-color;
+  color: #d4af37;
   margin-bottom: 20px;
 }
 

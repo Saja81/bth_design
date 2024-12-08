@@ -5,7 +5,7 @@ Description: This is our index page.
 
 # Home page
 
-Hej hej och välkommen till min sida.
+Hej och välkommen till min sida.
 Detta är ett projekt i en desigkurs där jag framförallt använder samverket Pico tillsammans med Twig.
 
 I vårt första kursmoment ska vi skapa en portfolio och lägga upp denna på Github. Detta är resultatet, jag har medvetet valt att inte fokusera på design och styling i detta första kursmoment då jag vill fokusera på att lära känna tekniken och hur alla filer i projektet hänger ihop. Under kursens gång kommer jag att vidareutveckla min portfolio och förhoppningsvis göra den betydligt snyggare än vad den är idag.

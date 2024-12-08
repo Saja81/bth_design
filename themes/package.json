@@ -7,20 +7,20 @@
   },
   "scripts": {
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass kmom02/scss/style.scss kmom02/css/style.css --no-source-map",
-    "style-min": "sass kmom02/scss/style.scss kmom02/css/style.min.css --no-source-map --style compressed"
+    "style": "sass kmom02test/scss/style.scss kmom02test/css/style.css --no-source-map",
+    "style-min": "sass kmom02test/scss/style.scss kmom02test/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "normalize.css": "^8.0.1",
-    "sass": "^1.81.0",
-    "stylelint": "^16.10.0",
+    "sass": "^1.82.0",
+    "stylelint": "^16.11.0",
     "stylelint-config-sass-guidelines": "^12.1.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0"
-  }
+  },
+  "description": ""
 }

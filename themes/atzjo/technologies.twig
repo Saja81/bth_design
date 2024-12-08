@@ -3,16 +3,20 @@
 <body>
     {% include 'incl/nav.twig' %}
 
-    <div class="main" role="main">
-        <div class="main-content">
-            <h1>{{ title }}</h1> <!-- Titel från YAML-frontmatter -->
+    <div class="tech" role="main">
+        <div class="tech-content">
+            {# <h1 class="title">{{ title }}</h1> <!-- Titel från YAML-frontmatter -->
+            <p>{{ description }}</p> <!-- Beskrivning från YAML-frontmatter --> #}
+
             <div class="technologies-grid">
-                <!-- Här kommer vi att visa teknologilistan -->
-                {{ content }} <!-- Här renderas själva innehållet från index.md -->
+                <!-- Här renderar vi innehållet från index.md -->
+                <div class="content">
+                    {{ content }} <!-- Här renderas själva innehållet från index.md -->
+                </div>
             </div>
         </div>
     </div>
 
-    {% include 'incl/footer.twig' %}
+    {# {% include 'incl/footer.twig' %} #}
 </body>
 </html>
