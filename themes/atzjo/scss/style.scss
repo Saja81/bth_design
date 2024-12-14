@@ -1,15 +1,13 @@
-@import '../../node_modules/normalize.css/normalize';
-@import 'variables';
-@import 'header';
-@import 'footer';
-@import 'main';
-@import 'blockquotes';
-@import 'code';
-@import 'mobile-menu';
-@import 'technologies';
+@use '_variables';
+@use 'typography';
+@use 'container';
+@use 'footer';
+@use 'header';
+@use 'blockquotes';
+@use 'code';
+@use 'technology';
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -17,116 +15,46 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import '../../node_modules/normalize.css/normalize';
 
-// .tech {
-//   background-color: rgb(244, 19, 56);
-// }
-
-// Global resets och normalisering
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
+/* Se till att box-sizing används för alla element */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* Body-stilar */
+/* Grundläggande styling för body */
 body {
-  font-family: 'Edu AU VIC WA NT Pre', sans-serif;
-  // color: $primary-text;
-  color: #bdc3c7;
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
+  // font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* Förhindrar horisontell scrollning */
 }
 
+/* Standardinställningar för main */
 .main {
-  // background-color: $primary-background;
-  background-color: #2c3e50;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
+  width: 100%;  /* Se till att .main fyller hela bredden */
+  max-width: 80vw; /* Begränsar bredden till viewport-bredden */
+  margin: 0 auto;  /* Centrerar innehållet om du har en max-bredd */
+  padding: 20px;  /* Lite padding för att ge utrymme */
 }
 
-.main-content {
-  // background-color: $primary-background;
-  background-color: #2c3e50;
-  // color: $primary-text;
-  color: #bdc3c7;
-  padding: 40px;
-  width: 50%;
-  max-width: 1200px;
-  margin: 0 auto;
+@media (max-width: 768px) {
+  body {
+      padding: 0 10px;  /* Lägger till lite padding på små skärmar */
+  }
 
-
-  @media (max-width: 600px) {
-    width: 90%;
-    padding: 20px;
+  .main {
+      width: 100%;
+      padding: 10px;  /* Minska padding på små skärmar */
   }
 }
 
-a {
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  // color: $navbar-footer-link;
-  color: #2c3e50;
-  transition: color 0.3s ease;
-
-  &:hover {
-    // color: $navbar-footer-link-hover;
-    color: #5d6d7e;
+@media (max-width: 480px) {
+  body {
+      padding: 0 5px;  /* Minska padding ännu mer om skärmen är väldigt liten */
   }
-}
 
-p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-  // color: $primary-text;
-  color: #bdc3c7;
-  margin-bottom: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  // color: $heading-color;
-  color: #d4af37;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.75rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4,
-h5,
-h6 {
-  font-size: 1.25rem;
-}
-
-.sandra-img {
-  width: 50%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 50%;
+  .main {
+      padding: 5px;  /* Minska padding för ännu mindre skärmar */
+  }
 }

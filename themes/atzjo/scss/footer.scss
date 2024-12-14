@@ -1,13 +1,19 @@
-@import 'variables';
+@use '_variables';
 
 .footer {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  padding: 2rem;
   justify-content: space-between;
-  background-color: $navbar-footer-background;
-  padding: 20px;
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
-  bottom: 0;
+  align-items: center;
+  background-color: variables.$primary-background;
+  color: variables.$primary-text;
+
+ .social {
+    a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: variables.$primary-text;
+    }
+  }
 }
