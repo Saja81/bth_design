@@ -1,7 +1,7 @@
 ---
 Title: JavaScript
 Description: JavaScript
-# hidden: true
+Template: technology
 ---
 
 # JavaScript

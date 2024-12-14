@@ -1,17 +1,50 @@
 ---
-Title: Technology
+Title: Technologier
 Description: A page listing various technologies like CSS, HTML, and more.
 Template: technologies
+techs:
+  - name: CSS
+    class: css
+  - name: HTML
+    class: html
+  - name: JAVASCRIPT
+    class: javascript
+  - name: PHP
+    class: php
+  - name: PYTHON
+    class: python
+  - name: GIT
+    class: git
+  - name: SQLITE
+    class: sqlite
 ---
 
-## Technologies
+# Technologies
 
-This page lists various technologies used in web development, such as:
+<!-- <div class="box">
+CSS
+</div>
 
-<!-- - [CSS](%base_url%/technologies/css)
-- [HTML](%base_url%/technologies/html)
-- [JavaScript](%base_url%/technologies/javascript)
-- [Python](%base_url%/technologies/python)
-- [php](%base_url%/technologies/php)
-- [sqlite](%base_url%/technologies/sqlite)
-- [Git](%base_url%/technologies/Git) -->
+<div class="box">
+HTML
+</div>
+
+<div class="box">
+JAVASCRIPT
+</div>
+
+<div class="box">
+PHP
+</div>
+
+<div class="box">
+PYTHON
+</div>
+
+<div class="box">
+GIT
+</div>
+
+<div class="box wide">
+SQLITE
+</div> -->

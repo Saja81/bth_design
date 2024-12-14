@@ -1,7 +1,7 @@
 ---
 Title: PHP
 Description: PHP
-# hidden: true
+Template: technology
 ---
 
 # PHP

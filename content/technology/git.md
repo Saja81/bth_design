@@ -1,7 +1,7 @@
 ---
 Title: Git
 Description: Git
-# hidden: true
+Template: technology
 ---
 
 # Git

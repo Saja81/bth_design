@@ -1,7 +1,7 @@
 ---
 Title: SQLite
 Description: SQLite
-# hidden: true
+Template: technology
 ---
 
 # SQLite

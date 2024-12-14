@@ -1,7 +1,7 @@
 ---
 Title: HTML
 Description: HTML
-# hidden: true
+Template: technology
 ---
 
 # HTML

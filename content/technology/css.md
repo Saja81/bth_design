@@ -1,7 +1,7 @@
 ---
 Title: CSS
 Description: CSS
-# hidden: true
+Template: technology
 ---
 
 ## CSS
