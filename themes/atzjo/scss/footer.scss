@@ -1,4 +1,4 @@
-@use '_variables';
+@use 'variables';
 
 .footer {
   display: flex;
@@ -8,12 +8,12 @@
   align-items: center;
   background-color: variables.$primary-background;
   color: variables.$primary-text;
+}
 
- .social {
-    a {
+.footer .social {
+  a {
     text-decoration: none;
     font-size: 3rem;
     color: variables.$primary-text;
-    }
   }
 }

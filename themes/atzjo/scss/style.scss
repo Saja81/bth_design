@@ -1,4 +1,4 @@
-@use '_variables';
+@use 'variables';
 @use 'typography';
 @use 'container';
 @use 'footer';
@@ -18,7 +18,9 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../node_modules/normalize.css/normalize';
 
 /* Se till att box-sizing används för alla element */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -40,21 +42,21 @@ body {
 
 @media (max-width: 768px) {
   body {
-      padding: 0 10px;  /* Lägger till lite padding på små skärmar */
+    padding: 0 10px;  /* Lägger till lite padding på små skärmar */
   }
 
   .main {
-      width: 100%;
-      padding: 10px;  /* Minska padding på små skärmar */
+    width: 100%;
+    padding: 10px;  /* Minska padding på små skärmar */
   }
 }
 
 @media (max-width: 480px) {
   body {
-      padding: 0 5px;  /* Minska padding ännu mer om skärmen är väldigt liten */
+    padding: 0 5px;  /* Minska padding ännu mer om skärmen är väldigt liten */
   }
 
   .main {
-      padding: 5px;  /* Minska padding för ännu mindre skärmar */
+    padding: 5px;  /* Minska padding för ännu mindre skärmar */
   }
 }

@@ -1,4 +1,4 @@
-@use '_variables';
+@use 'variables';
 
 .logo {
   width: 15%;
@@ -18,10 +18,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: variables.$primary-background;
+}
 
-  }
-
- .site-header {
+.site-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

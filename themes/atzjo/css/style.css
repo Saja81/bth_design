@@ -16,6 +16,7 @@ p {
   background-color: #2c3e50;
   color: #bdc3c7;
 }
+
 .footer .social a {
   text-decoration: none;
   font-size: 3rem;
@@ -100,7 +101,7 @@ pre code {
 .landingpage {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.96rem 1.96rem;
+  gap: 1.96rem;
   margin-bottom: 1.96rem;
 }
 
@@ -146,12 +147,11 @@ pre code {
 }
 
 .box:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .tech-link {
   background: none;
-  border: none;
   color: inherit;
   display: block; /* Så att knappen täcker hela boxen */
   text-decoration: none; /* Ta bort understrykning om du skulle använda länkar */
@@ -6616,7 +6616,9 @@ template {
 }
 
 /* Se till att box-sizing används för alla element */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 

@@ -1,7 +1,9 @@
+@use 'variables';
+
 .landingpage {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.96rem 1.96rem;
+  gap: 1.96rem;
   margin-bottom: 1.96rem;
 }
 
@@ -47,12 +49,11 @@
 }
 
 .box:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .tech-link {
   background: none;
-  border: none;
   color: inherit;
   display: block; /* Så att knappen täcker hela boxen */
   text-decoration: none; /* Ta bort understrykning om du skulle använda länkar */
@@ -64,7 +65,7 @@
 .technology {
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: start;
 }
 
@@ -78,7 +79,7 @@
 
 @media (max-width: 768px) {
   .landingpage {
-      display: block;  /* Gör om griden till en blocklayout */
+    display: block;  /* Gör om griden till en blocklayout */
   }
 
   .landingpage h1 {
@@ -86,7 +87,7 @@
   }
 
   .landingpage .box {
-      margin-bottom: 20px;  /* Lägg till lite avstånd mellan boxarna om de hamnar i en kolumn */
+    margin-bottom: 20px;  /* Lägg till lite avstånd mellan boxarna om de hamnar i en kolumn */
   }
 
   .menu {
