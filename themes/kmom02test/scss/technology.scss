@@ -1,11 +1,8 @@
 .landingpage {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.96rem 1.96rem;
   margin-bottom: 1.96rem;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr; /* Gör gridet en kolumn brett */
-  }
 }
 
 .landingpage h1 {
@@ -14,24 +11,60 @@
 }
 
 .box {
+  display: flex; /* Flexbox inuti boxen kan hjälpa till med justering av innehållet */
+  justify-content: center; /* Centrerar innehållet horisontellt */
+  align-items: center;
   border: 1px solid rgb(183, 184, 184);
   padding: 1.96rem;
+}
+
+.css {
+  grid-column: 1 / 4; /* CSS-boxen tar alla kolumner (kolumn 1-3) */
+}
+
+.html {
+  grid-column: 1 / 2; /* HTML-boxen tar första kolumnen */
+}
+
+.javascript {
+  grid-column: 2 / 4; /* JavaScript-boxen tar kolumn 2 och 3 */
+}
+
+.php {
+  grid-column: 1 / 3; /* PHP-boxen tar kolumn 1 och 2 */
+}
+
+.python {
+  grid-column: 3 / 4; /* Python-boxen tar sista kolumnen (kolumn 3) */
+}
+
+.git {
+  grid-column: 1 / 4; /* Git-boxen tar alla kolumner (kolumn 1-3) */
+}
+
+.sqlite {
+  grid-column: 1 / 4; /* SQLite-boxen tar alla kolumner (kolumn 1-3) */
 }
 
 .box:hover {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-
-a {
-  color: blue; /* Gör länken blå */
-  text-decoration: underline; /* Lägg till understrykning */
+.tech-link {
+  background: none;
+  border: none;
+  color: inherit;
+  display: block; /* Så att knappen täcker hela boxen */
+  text-decoration: none; /* Ta bort understrykning om du skulle använda länkar */
+  width: 100%; /* Så att knappen täcker hela boxen */
+  height: 100%; /* Gör knappen lika hög som boxen */
+  cursor: pointer; /* För att visa att boxen är klickbar */
 }
 
 .technology {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-evenly;
   align-items: start;
 }
 
@@ -41,4 +74,26 @@ a {
 
 .technology .menu {
   width: 30%;
+}
+
+@media (max-width: 768px) {
+  .landingpage {
+      display: block;  /* Gör om griden till en blocklayout */
+  }
+
+  .landingpage h1 {
+    text-align: center;
+  }
+
+  .landingpage .box {
+      margin-bottom: 20px;  /* Lägg till lite avstånd mellan boxarna om de hamnar i en kolumn */
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .technology .article {
+    width: 100%;
+  }
 }

@@ -1,28 +1,29 @@
-@use '_variables';
+// @use '_variables';
 
-html, body {
-  height: 100%;
-  font-size: 100%;
-}
+// html, body {
+//   height: 100%;
+//   font-size: 100%;
+// }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
+// body {
+//   display: flex;
 
-.main {
-  flex: 1 0 auto;
-}
+//   flex-direction: column;
+// }
 
-.header, .footer {
-  flex: 0 0 auto;
-}
+// .main {
+//   flex: 1 0 auto;
+// }
 
-.main {
-  width: 64em;
-  // width: 100%;
-  // max-width: 64rem;
-  padding: 2rem;
-  // margin: 0 auto;
-  margin: 1.96rem auto;
-}
+// .header, .footer {
+//   flex: 0 0 auto;
+// }
+
+// .main {
+//   width: 64em;
+//   // width: 100%;
+//   // max-width: 64rem;
+//   padding: 2rem;
+//   // margin: 0 auto;
+//   margin: 1.96rem auto;
+// }

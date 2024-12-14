@@ -10,12 +10,13 @@
           {# {{ dump(base_url) }} #}
 
           {% for tech in meta.techs %}
-          <a href="{{ base_url }}/technology/{{ tech.class }}">
-            <div class="box {{tech.class}}">
-              <h3>{{tech.name}}</h3>
+            <div class="box {{ tech.class }}">
+              <button onclick="window.location.href='{{ base_url }}/technology/{{ tech.class }}'" class="tech-link">
+                <h3>{{ tech.name }}</h3>
+              </button>
             </div>
-          </a>
           {% endfor %}
+
         </div>
     </div>
 
