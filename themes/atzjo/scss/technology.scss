@@ -16,8 +16,8 @@
   display: flex; /* Flexbox inuti boxen kan hjälpa till med justering av innehållet */
   justify-content: center; /* Centrerar innehållet horisontellt */
   align-items: center;
-  border: 1px solid rgb(183, 184, 184);
-  padding: 1.96rem;
+  border: 1px solid rgb(229, 230, 230);
+  // padding: 1.96rem;
 }
 
 .css {
@@ -49,7 +49,7 @@
 }
 
 .box:hover {
-  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px 0 rgba(130, 129, 129, 0.2);
 }
 
 .tech-link {
@@ -57,8 +57,8 @@
   color: inherit;
   display: block; /* Så att knappen täcker hela boxen */
   text-decoration: none; /* Ta bort understrykning om du skulle använda länkar */
-  width: 100%; /* Så att knappen täcker hela boxen */
-  height: 100%; /* Gör knappen lika hög som boxen */
+  width: 100%;
+  height: 100%;
   cursor: pointer; /* För att visa att boxen är klickbar */
 }
 
