@@ -7,8 +7,8 @@
   },
   "scripts": {
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass atzjo/scss/style.scss atzjo/css/style.css --no-source-map",
-    "style-min": "sass atzjo/scss/style.scss atzjo/css/style.min.css --no-source-map --style compressed"
+    "style": "sass atzjokopia/scss/style.scss atzjokopia/css/style.css --no-source-map",
+    "style-min": "sass atzjokopia/scss/style.scss atzjokopia/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",

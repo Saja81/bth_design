@@ -1,0 +1,50 @@
+@use 'variables';
+
+.logo {
+  width: 15%;
+  max-width: 120px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: variables.$primary-background;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  // color: variables.$primary-text;
+}
+
+.nav a {
+  font-size: 2rem;
+  color: variables.$primary-text !important;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline !important; /* Lägg till en understrykning vid hover */
+}
+
+.header a {
+  color: variables.$primary-text !important;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}
