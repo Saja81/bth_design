@@ -30,11 +30,21 @@
 
 .nav a {
   font-size: 2rem;
-  color: variables.$primary-text;
+  color: variables.$primary-text !important;
   text-decoration: none;
 }
 
+.nav a:hover {
+  text-decoration: underline !important; /* Lägg till en understrykning vid hover */
+}
+
 .header a {
-  color: variables.$primary-text;
+  color: variables.$primary-text !important;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
 }
