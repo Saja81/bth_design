@@ -23,6 +23,13 @@ p {
   color: #bdc3c7;
 }
 
+.footer .darkmode a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #bdc3c7;
+}
+
 .logo {
   width: 15%;
   max-width: 120px;

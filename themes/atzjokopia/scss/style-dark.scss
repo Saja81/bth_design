@@ -1,0 +1,85 @@
+@use 'variables-dark';
+@use 'typography';
+@use 'container';
+@use 'footer';
+@use 'header';
+@use 'blockquotes';
+@use 'code';
+@use 'technology';
+@use 'mobile-menu';
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Patrick+Hand&display=swap');
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../node_modules/normalize.css/normalize';
+
+/* Se till att box-sizing används för alla element */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Grundläggande styling för body */
+body {
+  // font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* Förhindrar horisontell scrollning */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Luckiest Guy", cursive;
+}
+
+p {
+  font-family: "Patrick Hand", cursive;
+}
+
+/* Standardinställningar för main */
+.main {
+  width: 100%;  /* Se till att .main fyller hela bredden */
+  max-width: 80vw; /* Begränsar bredden till viewport-bredden */
+  margin: 0 auto;  /* Centrerar innehållet om du har en max-bredd */
+  padding: 20px;  /* Lite padding för att ge utrymme */
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;  /* Lägger till lite padding på små skärmar */
+  }
+
+  .main {
+    width: 100%;
+    padding: 10px;  /* Minska padding på små skärmar */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 5px;  /* Minska padding ännu mer om skärmen är väldigt liten */
+  }
+
+  .main {
+    padding: 5px;  /* Minska padding för ännu mindre skärmar */
+  }
+}
+
+body {
+  background-color: black;
+}
+
+p,
+h1,
+h2,
+h3,
+.menulink a  {
+  color: #ecf0f1;
+}
