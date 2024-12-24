@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables/_index.scss' as *;
 
 .logo {
   width: 15%;
@@ -17,7 +17,8 @@
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
-  background-color: variables.$primary-background;
+  box-shadow: 0px 4px 10px gray;
+  color: $third-font-color;
 }
 
 .site-header {
@@ -25,22 +26,23 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  // color: variables.$primary-text;
 }
 
 .nav a {
   font-size: 2rem;
-  color: variables.$primary-text !important;
   text-decoration: none;
+  color: $third-font-color !important;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .nav a:hover {
-  text-decoration: underline !important; /* Lägg till en understrykning vid hover */
+  color: #9C8035 !important;
+  text-decoration: underline;
 }
 
 .header a {
-  color: variables.$primary-text !important;
   text-decoration: none;
+  color: $third-font-color;
 }
 
 @media (max-width: 768px) {

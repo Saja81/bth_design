@@ -1,8 +1,6 @@
 @use 'variables/_index.scss' as *;
-
-
-
 // lägg in ovan i alla filer som använder variabler
+
 @use 'typography';
 @use 'container';
 @use 'footer';
@@ -35,6 +33,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;  /* Förhindrar horisontell scrollning */
+  // color: black;
+  background-color: $primary-background-color;
 }
 
 /* Standardinställningar för main */
@@ -43,7 +43,8 @@ body {
   max-width: 80vw; /* Begränsar bredden till viewport-bredden */
   margin: 0 auto;  /* Centrerar innehållet om du har en max-bredd */
   padding: 20px;  /* Lite padding för att ge utrymme */
-  border: solid 2px $main-font-color;
+  // background-color: $primary-background-color;
+  // border: solid 2px $third-background-color;
 }
 
 @media (max-width: 768px) {

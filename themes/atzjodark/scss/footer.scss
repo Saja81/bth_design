@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables/_index.scss' as *;
 
 .footer {
   display: flex;
@@ -6,15 +6,22 @@
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
-  background-color: variables.$primary-background;
-  color: variables.$primary-text;
+  background-color: $secondary-background-color;
 }
 
 .footer .social {
   a {
     text-decoration: none;
     font-size: 3rem;
-    color: variables.$primary-text;
+    color: $secondary-font-color;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+
+  }
+}
+
+.footer .social {
+  a:hover {
+    color: #9C8035 !important;
   }
 }
 
@@ -23,7 +30,17 @@
     padding: 10px;
     text-decoration: none;
     font-size: 2rem;
-    color: variables.$primary-text;
-
+    color: $secondary-font-color;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
   }
+}
+
+.footer .darkmode {
+  a:hover {
+    color: #9C8035 !important;
+  }
+}
+
+.footer-p {
+  color: $secondary-font-color;
 }

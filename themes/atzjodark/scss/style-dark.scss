@@ -1,6 +1,11 @@
 @use 'variables/_index.scss' as * with (
-  $main-background-color: #333,
-  $main-font-color: #fff,
+  $primary-background-color: #000000,
+  $secondary-background-color: #ffffff,
+  $third-background-color: #5F34B2,
+
+  $primary-font-color: #FFFFFF,
+  $secondary-font-color: #000000,
+  $third-font-color: #5F34B2,
 );
 
 @use 'variables-dark';
@@ -13,7 +18,10 @@
 @use 'technology';
 @use 'mobile-menu';
 
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Bungee&family=Coiny&family=Quicksand:wght@300..700&display=swap');
+
+
+// @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Patrick+Hand&display=swap');
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -36,17 +44,31 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;  /* Förhindrar horisontell scrollning */
+  background-color: $primary-background-color;
 }
 
 h1,
 h2,
-h3 {
-  font-family: 'Luckiest Guy', cursive;
+h3, li a {
+  font-family: "Black Ops One", serif;
 }
 
 p {
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Archivo Black", serif;
+  color: $primary-font-color;
 }
+
+.title p {
+  color: $third-font-color !important;
+}
+
+code {
+  color: $secondary-font-color;
+}
+
+// li a {
+//   font-family: "Archivo Black", serif;
+// }
 
 /* Standardinställningar för main */
 .main {
@@ -54,7 +76,28 @@ p {
   max-width: 80vw; /* Begränsar bredden till viewport-bredden */
   margin: 0 auto;  /* Centrerar innehållet om du har en max-bredd */
   padding: 20px;  /* Lite padding för att ge utrymme */
-  border: solid 2px $main-font-color;
+  // border: solid 2px $secondary-background-color;
+  // background-color: $primary-background-color;
+}
+
+.footer {
+  background-color: $primary-background-color;
+}
+
+.footer-p {
+  color: $primary-font-color;
+}
+
+.footer .social {
+  a {
+    color: $primary-font-color;
+  }
+}
+
+.footer .darkmode {
+  a {
+    color: $primary-font-color;
+  }
 }
 
 @media (max-width: 768px) {
@@ -76,20 +119,4 @@ p {
   .main {
     padding: 5px;  /* Minska padding för ännu mindre skärmar */
   }
-}
-
-body {
-  background-color: #000;
-}
-
-p,
-h1,
-h2,
-h3,
-.menulink a {
-  color: #ecf0f1;
-}
-
-code {
-  color: #000;
 }

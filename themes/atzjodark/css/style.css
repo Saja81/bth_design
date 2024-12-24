@@ -13,21 +13,18 @@ p {
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
-  background-color: #2c3e50;
-  color: #bdc3c7;
+  background-color: #5F34B2;
 }
 
 .footer .social a {
   text-decoration: none;
   font-size: 3rem;
-  color: #bdc3c7;
 }
 
 .footer .darkmode a {
   padding: 10px;
   text-decoration: none;
   font-size: 2rem;
-  color: #bdc3c7;
 }
 
 .logo {
@@ -47,7 +44,6 @@ p {
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
-  background-color: #2c3e50;
 }
 
 .site-header {
@@ -59,7 +55,6 @@ p {
 
 .nav a {
   font-size: 2rem;
-  color: #bdc3c7 !important;
   text-decoration: none;
 }
 
@@ -68,7 +63,6 @@ p {
 }
 
 .header a {
-  color: #bdc3c7 !important;
   text-decoration: none;
 }
 
@@ -190,7 +184,6 @@ pre code {
 }
 
 .menulink a {
-  color: #000;
   text-decoration: none;
 }
 
@@ -6699,6 +6692,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Förhindrar horisontell scrollning */
+  background-color: #FFFFFF;
 }
 
 /* Standardinställningar för main */
@@ -6707,7 +6701,6 @@ body {
   max-width: 80vw; /* Begränsar bredden till viewport-bredden */
   margin: 0 auto; /* Centrerar innehållet om du har en max-bredd */
   padding: 20px; /* Lite padding för att ge utrymme */
-  border: solid 2px #333;
 }
 
 @media (max-width: 768px) {
