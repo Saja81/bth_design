@@ -189,6 +189,11 @@ pre code {
   width: 30%;
 }
 
+.menulink a {
+  color: #000;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .landingpage {
     display: block; /* Gör om griden till en blocklayout */
@@ -222,7 +227,8 @@ pre code {
   padding: 0 1em;
 }
 
-.nav a, .nav-toggle {
+.nav a,
+.nav-toggle {
   color: #333;
 }
 
@@ -6701,6 +6707,7 @@ body {
   max-width: 80vw; /* Begränsar bredden till viewport-bredden */
   margin: 0 auto; /* Centrerar innehållet om du har en max-bredd */
   padding: 20px; /* Lite padding för att ge utrymme */
+  border: solid 2px #333;
 }
 
 @media (max-width: 768px) {
