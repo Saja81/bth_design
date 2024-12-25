@@ -1,4 +1,4 @@
-@use 'variables/_index.scss' as * with (
+@use 'variables/index.scss' as * with (
   $primary-background-color: #000000,
   $secondary-background-color: #ffffff,
   $third-background-color: #5F34B2,
@@ -49,13 +49,14 @@ body {
 
 h1,
 h2,
-h3, li a {
-  font-family: "Black Ops One", serif;
+h3,
+li a {
+  font-family: 'Black Ops One', serif;
 }
 
 h1,
 p {
-  font-family: "Archivo Black", serif;
+  font-family: 'Archivo Black', serif;
   color: $primary-font-color;
 }
 

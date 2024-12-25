@@ -1,4 +1,4 @@
-@use 'variables/_index.scss' as *;
+@use 'variables/index.scss' as *;
 
 .footer {
   display: flex;
@@ -21,7 +21,7 @@
 
 .footer .social {
   a:hover {
-    color: #9C8035 !important;
+    color: #9c8035 !important;
   }
 }
 
@@ -37,7 +37,7 @@
 
 .footer .darkmode {
   a:hover {
-    color: #9C8035 !important;
+    color: #9c8035 !important;
   }
 }
 
