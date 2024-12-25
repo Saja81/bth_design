@@ -1,0 +1,31 @@
+/* Ta bort standardpunktlistans stil */
+.analysis-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Stil för varje listitem */
+.analysis-item {
+  margin-bottom: 20px; /* Lägger till avstånd mellan varje listobjekt */
+}
+
+/* Ta bort understrykning från länkar */
+.analysis-link {
+  text-decoration: none;
+  color: inherit; /* För att länken ärver färgen från förälderelementet, tex h3 */
+  display: block; /* Gör att länken tar upp hela bredden av listobjektet */
+}
+
+/* Stil för h3 inom länken */
+.analysis-link h3 {
+  font-size: 1.5rem; /* Justera storlek på rubriken */
+  font-weight: bold; /* Gör rubriken fet */
+  color: #333; /* Färg på texten, kan justeras */
+  transition: color 0.3s ease; /* För en smidig färgändring vid hover */
+}
+
+/* Hover-effekt för länken */
+.analysis-link:hover h3 {
+  color: #007bff; /* Förändrar färgen på rubriken vid hover */
+}
