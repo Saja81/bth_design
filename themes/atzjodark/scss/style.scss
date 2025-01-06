@@ -34,38 +34,53 @@ body {
   // font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;  /* Förhindrar horisontell scrollning */
+  overflow-x: hidden;
+  /* Förhindrar horisontell scrollning */
   // color: black;
   background-color: $primary-background-color;
 }
 
 /* Standardinställningar för main */
 .main {
-  width: 100%;  /* Se till att .main fyller hela bredden */
-  max-width: 80vw; /* Begränsar bredden till viewport-bredden */
-  margin: 0 auto;  /* Centrerar innehållet om du har en max-bredd */
-  padding: 20px;  /* Lite padding för att ge utrymme */
+  width: 100%;
+  /* Se till att .main fyller hela bredden */
+  max-width: 80vw;
+  /* Begränsar bredden till viewport-bredden */
+  margin: 0 auto;
+  /* Centrerar innehållet om du har en max-bredd */
+  padding: 20px;
+  /* Lite padding för att ge utrymme */
   // background-color: $primary-background-color;
   // border: solid 2px $third-background-color;
 }
 
+.hidden {
+  display: none !important;
+}
+
+// .hidden för att hantera hamburgermeny på mobil
+
 @media (max-width: 768px) {
   body {
-    padding: 0 10px;  /* Lägger till lite padding på små skärmar */
+    padding: 0 10px;
+    /* Lägger till lite padding på små skärmar */
   }
 
   .main {
     width: 100%;
-    padding: 10px;  /* Minska padding på små skärmar */
+    padding: 10px;
+    /* Minska padding på små skärmar */
   }
 }
 
 @media (max-width: 480px) {
   body {
-    padding: 0 5px;  /* Minska padding ännu mer om skärmen är väldigt liten */
+    padding: 0 5px;
+    /* Minska padding ännu mer om skärmen är väldigt liten */
   }
 
   .main {
-    padding: 5px;  /* Minska padding för ännu mindre skärmar */
+    padding: 5px;
+    /* Minska padding för ännu mindre skärmar */
   }
 }
