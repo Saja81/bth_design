@@ -5,27 +5,43 @@ video {
   max-width: 100%;
 }
 
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .maingallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; // Centrerar hela galleriet vertikalt på sidan
+  background-color: #fff;
+  // min-height: 100vh; // Centrerar hela galleriet vertikalt på sidan
 
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); // Tre kolumner på större skärmar
     gap: 20px; // Mellanrum mellan bilderna
+    margin: 20px;
+
   }
 
   .gallery-item {
     display: flex;
     justify-content: center; // Centrerar varje bild horisontellt
     align-items: center; // Centrerar varje bild vertikalt
-
-    .flash-img {
-      width: 150px; // Ser till att bilderna håller rätt storlek
-      height: 150px;
-    }
   }
 
   // Mediaquery för mindre skärmar

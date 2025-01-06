@@ -2,31 +2,70 @@
 
 <body>
     {% include 'incl/nav.twig' %}
-
-    {{content}}
+     <div class="embed-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/aD7RDDW-3w4?si=sEZTkxV7tNJL6l3x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
     <div class="maingallery" role="main">
-        <div class="gallery">
+      <div class="gallery">
           <div class="gallery-item">
-            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250">
+            <a href="{{ base_url }}/image/testbild5.jpg" target="_blank">
+              <picture>
+               <source media="(min-width: 668px)" srcset="{{ base_url }}/image/testbild5.jpg?w=960&q=90">
+               <source media="(min-width: 376px)" srcset="{{ base_url }}/image/testbild5.jpg?w=667&q=70">
+               <img src="{{ base_url }}/image/testbild5.jpg?w=375&crop-to-fit&q=50" alt="testbild5">
+              </picture>
+            </a>
           </div>
           <div class="gallery-item">
-            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250&area=50,0,0,0">
+            <a href="{{ base_url }}/image/testbild1.jpg" target="_blank">
+              <picture>
+               <source media="(min-width: 668px)" srcset="{{ base_url }}/image/testbild1.jpg?w=960&q=90">
+               <source media="(min-width: 376px)" srcset="{{ base_url }}/image/testbild1.jpg?w=960&q=90">
+               <img src="{{ base_url }}/image/testbild1.jpg?w=375&crop-to-fit&q=70" alt="testbild1">
+              </picture>
+            </a>
           </div>
-          <div class="gallery-item">
-            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250&area=0,50,0,0">
+           <div class="gallery-item">
+            <a href="{{ base_url }}/image/testbild2.jpg" target="_blank">
+              <picture>
+               <source media="(min-width: 668px)" srcset="{{ base_url }}/image/testbild2.jpg?w=960&q=90">
+               <source media="(min-width: 376px)" srcset="{{ base_url }}/image/testbild2.jpg?w=960&q=90">
+               <img src="{{ base_url }}/image/testbild2.jpg?w=375&crop-to-fit&q=70" alt="testbild2">
+              </picture>
+            </a>
           </div>
-          <div class="gallery-item">
-            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250&area=0,0,50,0">
+           <div class="gallery-item">
+            <a href="{{ base_url }}/image/testbild3.jpg" target="_blank">
+              <picture>
+               <source media="(min-width: 668px)" srcset="{{ base_url }}/image/testbild3.jpg?w=960&q=90">
+               <source media="(min-width: 376px)" srcset="{{ base_url }}/image/testbild3.jpg?w=960&q=90">
+               <img src="{{ base_url }}/image/testbild3.jpg?w=375&crop-to-fit&q=70" alt="testbild3">
+              </picture>
+            </a>
           </div>
-          <div class="gallery-item">
-            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250&area=0,0,0,50">
+           <div class="gallery-item">
+            <a href="{{ base_url }}/image/testbild4.jpg" target="_blank">
+              <picture>
+               <source media="(min-width: 668px)" srcset="{{ base_url }}/image/testbild4.jpg?w=960&q=90">
+               <source media="(min-width: 376px)" srcset="{{ base_url }}/image/testbild4.jpg?w=960&q=90">
+               <img src="{{ base_url }}/image/testbild4.jpg?w=375&crop-to-fit&q=70" alt="testbild4">
+              </picture>
+            </a>
           </div>
-          <div class="gallery-item">
-            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250&crop=50,50,100,100">
+           <div class="gallery-item">
+            <a href="{{ base_url }}/image/testbild6.jpg" target="_blank">
+              <picture>
+               <source media="(min-width: 668px)" srcset="{{ base_url }}/image/testbild6.jpg?w=960&q=90">
+               <source media="(min-width: 376px)" srcset="{{ base_url }}/image/testbild6.jpg?w=960&q=90">
+               <img src="{{ base_url }}/image/testbild6.jpg?w=375&crop-to-fit&q=70" alt="testbild6">
+              </picture>
+            </a>
           </div>
-        </div>
+
+      </div>
     </div>
+
 
     {% include 'incl/footer.twig' %}
 </body>
