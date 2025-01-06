@@ -1,0 +1,64 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+      <div class="gallery">
+        <div class="gallery-item">
+          <p> image/leaf_256x256.png?w=150&h=150 ger en bild som är 150x150 pixlar stor. Om vi bara sätter bredden ?w=150 så behåller den sin aspect ratio på 1:1 men minskar bredden till 150px</p>
+          <img class="flash-img" src="{{ base_url }}/image/testbild1.jpg?w=150&h=150">
+          <img class="flash-img" src="{{ base_url }}/image/testbild1.jpg?w=150&h=150&f=grayscale">
+
+          <p>Det går även att använda samma parameterar för att göra bilden större, t.ex. image/leaf_256x256.png?w=1500&h=1500 ger en 1500x1500 pixlar stor bild, även om det kanske inte hade sett så bra ut när orginalet är 250x250.</p>
+          <img class="flash-img" src="{{ base_url }}/image/testbild2.jpg?w=150&h=150">
+
+          <p>Det finns även möjlighet att stretcha sina bilder eller köra en crop-to-fit, vilket är två andra vanliga sätt att jobba med bilder. Vi kollar på ett exempel som visar båda. ?h=250&w=50&stretch eller ?h=250&w=50&crop-to-fit</p>
+          <img class="flash-img" src="{{ base_url }}/image/testbild3.jpg?h=250&w=50&stretch">
+          <img class="flash-img" src="{{ base_url }}/image/testbild3.jpg?h=250&w=50&crop-to-fit">
+
+          <p> Vi kan även jobba med %, det kan vara trevligt för att slippa behöva räkna ut vad man bör använda. T.ex. så har jag min header-bild som är 6000x3375 och landar på 1.7MB stor, det känns tungt för min sida, så jag väljer att minska den till 50% av dess originalbredd. ?width=50% </p>
+          <img class="flash-img" src="{{ base_url }}/image/testbild4.jpg?w=150&h=150">
+
+          <p>Om man vill beskära sin bild så kan man använda sig av regeln ?area=. Area säger vilken del av bilden vi faktiskt vill ha ut och tar emot 4 värden i ordningen top,right,bottom,left och mäts i %. ?area=50,0,0,0</p>
+          <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=150&h=150">
+          <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=150&h=150&area=50,0,0,0">
+          <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=150&h=150&area=0,50,0,0">
+          <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=150&h=150&area=0,0,50,0">
+          <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=150&h=150&area=0,0,0,50">
+          <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=150&h=150&crop=50,50,100,100">
+
+          <p>Jobba med kvalitet, här 10 vs 50 i kvalitet ?width=10%&q=50.</p>
+          <img class="flash-img" src="{{ base_url }}/image/testbild2.jpg?w=150&h=150&q=10">
+          <img class="flash-img" src="{{ base_url }}/image/testbild2.jpg?w=150&h=150&q=50">
+
+          <p> jobba med olika filter. <br>
+          Lighten	?convolve=lighten <br>
+          Darken	?convolve=darken <br>
+          Blur	?blur	<br>
+          Grayscale	?f=grayscale <br>
+          Brightness	?f=brightness,VALUE	<br>
+          Contrast	?f=constrast,VALUE	<br>
+          </p>
+
+          <img class="flash-img" src="{{ base_url }}/image/testbild6.jpg?w=150&h=150">
+
+          <img class="flash-img" src="{{ base_url }}/image/testbild6.jpg?w=150&h=150&convolve=lighten">
+
+          <img class="flash-img" src="{{ base_url }}/image/testbild6.jpg?w=150&h=150&convolve=darken">
+
+          <img class="flash-img" src="{{ base_url }}/image/testbild6.jpg?w=150&h=150&blur">
+
+          <img class="flash-img" src="{{ base_url }}/image/testbild6.jpg?w=150&h=150&f=grayscale">
+
+          <img class="flash-img" src="{{ base_url }}/image/testbild6.jpg?w=150&h=150&f=brightness,90">
+
+          <img class="flash-img" src="{{ base_url }}/image/testbild6.jpg?w=150&h=150&f=contrast,50">
+        </div>
+      </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

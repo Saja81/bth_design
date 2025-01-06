@@ -1,0 +1,34 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    {{content}}
+
+    <div class="maingallery" role="main">
+        <div class="gallery">
+          <div class="gallery-item">
+            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250">
+          </div>
+          <div class="gallery-item">
+            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250&area=50,0,0,0">
+          </div>
+          <div class="gallery-item">
+            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250&area=0,50,0,0">
+          </div>
+          <div class="gallery-item">
+            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250&area=0,0,50,0">
+          </div>
+          <div class="gallery-item">
+            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250&area=0,0,0,50">
+          </div>
+          <div class="gallery-item">
+            <img class="flash-img" src="{{ base_url }}/image/testbild5.jpg?w=250&h=250&crop=50,50,100,100">
+          </div>
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

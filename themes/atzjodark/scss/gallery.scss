@@ -1,0 +1,37 @@
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+.maingallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; // Centrerar hela galleriet vertikalt på sidan
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // Tre kolumner på större skärmar
+    gap: 20px; // Mellanrum mellan bilderna
+  }
+
+  .gallery-item {
+    display: flex;
+    justify-content: center; // Centrerar varje bild horisontellt
+    align-items: center; // Centrerar varje bild vertikalt
+
+    .flash-img {
+      width: 150px; // Ser till att bilderna håller rätt storlek
+      height: 150px;
+    }
+  }
+
+  // Mediaquery för mindre skärmar
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: 1fr; // En kolumn
+    }
+  }
+}

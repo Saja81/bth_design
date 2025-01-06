@@ -43,7 +43,7 @@ if (isset($_GET["action"])) {
 //   header("Location: $url");
 // }
 
-if ($_GET["action"] == "session_destroy") {
+if (isset($_GET["action"]) && $_GET["action"] == "session_destroy") {
   session_destroy();
 
   $scheme = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] !== "off") ? "https" : "http";
