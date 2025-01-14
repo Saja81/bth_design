@@ -5,6 +5,8 @@ Template: analysis
 analysis:
   - name: Color
     class: color
+  - name: Loadingtime
+    class: 02_load
 ---
 
 ## Landingpage för analysrapporter

@@ -58,6 +58,11 @@ body {
   display: none !important;
 }
 
+.loadingtime-table {
+  width: 100%;
+  height: 600px;
+}
+
 // .hidden för att hantera hamburgermeny på mobil
 
 @media (max-width: 768px) {

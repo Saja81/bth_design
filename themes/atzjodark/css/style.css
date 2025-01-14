@@ -13,18 +13,34 @@ p {
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
-  background-color: #5F34B2;
+  background-color: #5f34b2;
 }
 
 .footer .social a {
   text-decoration: none;
   font-size: 3rem;
+  color: #fff;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer .social a:hover {
+  color: #9c8035 !important;
 }
 
 .footer .darkmode a {
   padding: 10px;
   text-decoration: none;
   font-size: 2rem;
+  color: #fff;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer .darkmode a:hover {
+  color: #9c8035 !important;
+}
+
+.footer-p {
+  color: #fff;
 }
 
 .logo {
@@ -44,6 +60,8 @@ p {
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 10px #888887;
+  color: #5f34b2;
 }
 
 .site-header {
@@ -56,14 +74,18 @@ p {
 .nav a {
   font-size: 2rem;
   text-decoration: none;
+  color: #5f34b2 !important;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .nav a:hover {
-  text-decoration: underline !important; /* Lägg till en understrykning vid hover */
+  color: lime !important;
+  text-decoration: underline;
 }
 
 .header a {
   text-decoration: none;
+  color: #5f34b2;
 }
 
 @media (max-width: 768px) {
@@ -257,6 +279,86 @@ pre code {
     cursor: pointer;
   }
 }
+/* Ta bort standardpunktlistans stil */
+.analysis-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Stil för varje listitem */
+.analysis-item {
+  margin-bottom: 20px; /* Lägger till avstånd mellan varje listobjekt */
+}
+
+/* Ta bort understrykning från länkar */
+.analysis-link {
+  text-decoration: none;
+  color: inherit; /* För att länken ärver färgen från förälderelementet, tex h3 */
+  display: block; /* Gör att länken tar upp hela bredden av listobjektet */
+}
+
+/* Stil för h3 inom länken */
+.analysis-link h3 {
+  font-size: 1.5rem; /* Justera storlek på rubriken */
+  font-weight: bold; /* Gör rubriken fet */
+  color: #333; /* Färg på texten, kan justeras */
+  transition: color 0.3s ease; /* För en smidig färgändring vid hover */
+}
+
+/* Hover-effekt för länken */
+.analysis-link:hover h3 {
+  color: #007bff; /* Förändrar färgen på rubriken vid hover */
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.maingallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.maingallery .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+.maingallery .gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .maingallery .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6691,32 +6793,51 @@ template {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Förhindrar horisontell scrollning */
-  background-color: #FFFFFF;
+  overflow-x: hidden;
+  /* Förhindrar horisontell scrollning */
+  background-color: #fff;
 }
 
 /* Standardinställningar för main */
 .main {
-  width: 100%; /* Se till att .main fyller hela bredden */
-  max-width: 80vw; /* Begränsar bredden till viewport-bredden */
-  margin: 0 auto; /* Centrerar innehållet om du har en max-bredd */
-  padding: 20px; /* Lite padding för att ge utrymme */
+  width: 100%;
+  /* Se till att .main fyller hela bredden */
+  max-width: 80vw;
+  /* Begränsar bredden till viewport-bredden */
+  margin: 0 auto;
+  /* Centrerar innehållet om du har en max-bredd */
+  padding: 20px;
+  /* Lite padding för att ge utrymme */
+}
+
+.hidden {
+  display: none !important;
+}
+
+.main iframe.loadingtime-table {
+  max-width: 100% !important;
+  height: 600px !important;
+  border: 1px solid #ccc !important;
 }
 
 @media (max-width: 768px) {
   body {
-    padding: 0 10px; /* Lägger till lite padding på små skärmar */
+    padding: 0 10px;
+    /* Lägger till lite padding på små skärmar */
   }
   .main {
     width: 100%;
-    padding: 10px; /* Minska padding på små skärmar */
+    padding: 10px;
+    /* Minska padding på små skärmar */
   }
 }
 @media (max-width: 480px) {
   body {
-    padding: 0 5px; /* Minska padding ännu mer om skärmen är väldigt liten */
+    padding: 0 5px;
+    /* Minska padding ännu mer om skärmen är väldigt liten */
   }
   .main {
-    padding: 5px; /* Minska padding för ännu mindre skärmar */
+    padding: 5px;
+    /* Minska padding för ännu mindre skärmar */
   }
 }

@@ -1,11 +1,9 @@
-@use 'variables/index.scss' as * with (
-  $primary-background-color: #000000,
-  $secondary-background-color: #ffffff,
-  $third-background-color: #5F34B2,
-
-  $primary-font-color: #FFFFFF,
-  $secondary-font-color: #000000,
-  $third-font-color: #5F34B2,
+@use 'variables/index.scss' as * with ($primary-background-color: #000000,
+$secondary-background-color: #ffffff,
+$third-background-color: #5F34B2,
+$primary-font-color: #FFFFFF,
+$secondary-font-color: #000000,
+$third-font-color: #5F34B2,
 );
 
 @use 'variables-dark';
@@ -44,7 +42,8 @@ body {
   // font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;  /* Förhindrar horisontell scrollning */
+  overflow-x: hidden;
+  /* Förhindrar horisontell scrollning */
   background-color: $primary-background-color;
 }
 
@@ -75,10 +74,14 @@ code {
 
 /* Standardinställningar för main */
 .main {
-  width: 100%;  /* Se till att .main fyller hela bredden */
-  max-width: 80vw; /* Begränsar bredden till viewport-bredden */
-  margin: 0 auto;  /* Centrerar innehållet om du har en max-bredd */
-  padding: 20px;  /* Lite padding för att ge utrymme */
+  width: 100%;
+  /* Se till att .main fyller hela bredden */
+  max-width: 80vw;
+  /* Begränsar bredden till viewport-bredden */
+  margin: 0 auto;
+  /* Centrerar innehållet om du har en max-bredd */
+  padding: 20px;
+  /* Lite padding för att ge utrymme */
   // border: solid 2px $secondary-background-color;
   // background-color: $primary-background-color;
 }
@@ -103,23 +106,32 @@ code {
   }
 }
 
+.loadingtime-table {
+  width: 100%;
+  height: 600px;
+}
+
 @media (max-width: 768px) {
   body {
-    padding: 0 10px;  /* Lägger till lite padding på små skärmar */
+    padding: 0 10px;
+    /* Lägger till lite padding på små skärmar */
   }
 
   .main {
     width: 100%;
-    padding: 10px;  /* Minska padding på små skärmar */
+    padding: 10px;
+    /* Minska padding på små skärmar */
   }
 }
 
 @media (max-width: 480px) {
   body {
-    padding: 0 5px;  /* Minska padding ännu mer om skärmen är väldigt liten */
+    padding: 0 5px;
+    /* Minska padding ännu mer om skärmen är väldigt liten */
   }
 
   .main {
-    padding: 5px;  /* Minska padding för ännu mindre skärmar */
+    padding: 5px;
+    /* Minska padding för ännu mindre skärmar */
   }
 }
