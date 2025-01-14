@@ -5,7 +5,10 @@
   <div class="social">
     <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
     {% for social in pages["_meta"].meta.social %}
-    <a href="{{ social.url }}" title="{{ social.title }}" role="button">
+    <a href="{{ social.url }}"
+       title="{{ social.title }}"
+       aria-label="{{ social.title }}"
+       role="button">
       <i class="{{ social.icon }}" aria-hidden="true"></i>
       <span class="sr-only">{{ social.title }}</span>
     </a>
@@ -13,21 +16,19 @@
   </div>
 
   <div class="darkmode">
-    <a href="?action=session_destroy"><i class="fas fa-trash"></i></a>
-    <a href="?action=theme"><i class="fas fa-moon"></i></a>
+    <a href="?action=session_destroy"
+       title="Radera session"
+       aria-label="Radera session"
+       role="button">
+      <i class="fas fa-trash" aria-hidden="true"></i>
+      <span class="sr-only">Radera session</span>
+    </a>
+    <a href="?action=theme"
+       title="Byt till mörkt läge"
+       aria-label="Byt till mörkt läge"
+       role="button">
+      <i class="fas fa-moon" aria-hidden="true"></i>
+      <span class="sr-only">Byt till mörkt läge</span>
+    </a>
   </div>
-
 </div>
-
-<script
-  src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js"
-  type="text/javascript"
-></script>
-<script
-  src="{{ theme_url }}/../shared//js/utils.js"
-  type="text/javascript"
-></script>
-<script
-  src="{{ theme_url }}/../shared//js/responsive-navbar.js"
-  type="text/javascript"
-></script>
