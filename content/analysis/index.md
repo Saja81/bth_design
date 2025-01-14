@@ -7,6 +7,8 @@ analysis:
     class: color
   - name: Loadingtime
     class: 02_load
+  - name: Designprincip
+    class: 03_designprincip
 ---
 
 ## Landingpage för analysrapporter
