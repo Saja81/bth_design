@@ -62,7 +62,7 @@ p {
 
 .title p,
 .analysis-link h3 {
-  color: $third-font-color !important;
+  color: #9c8035 !important;
 }
 
 .analysis-link h3:hover {
@@ -80,6 +80,7 @@ code {
 .main a {
   color: #9c8035;
 }
+
 
 // li a {
 //   font-family: "Archivo Black", serif;
@@ -99,23 +100,34 @@ code {
   // background-color: $primary-background-color;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .footer {
   background-color: $primary-background-color;
 }
 
-.footer-p {
-  color: $primary-font-color;
+.footer-p,
+h1 {
+  color: #9c8035;
 }
 
 .footer .social {
   a {
-    color: $primary-font-color;
+    color: #9c8035;
   }
 }
 
 .footer .darkmode {
   a {
-    color: $primary-font-color;
+    color: #9c8035;
+  }
+}
+
+.nav ul li {
+  a {
+    color: #9c8035 !important;
   }
 }
 
