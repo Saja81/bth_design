@@ -1,9 +1,14 @@
 @use 'variables';
 
-p {
+p,
+ul li {
   font-size: 1.2em;
   line-height: 1.4;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1.96rem;
   // letter-spacing: 5px;
+}
+
+ul li a {
+  font-style: italic;
 }

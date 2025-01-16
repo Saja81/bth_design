@@ -1,9 +1,9 @@
 @use 'variables/index.scss' as * with ($primary-background-color: #000000,
-  $secondary-background-color: #ffffff,
-  $third-background-color: #8965D2,
-  $primary-font-color: #FFFFFF,
-  $secondary-font-color: #000000,
-  $third-font-color: #8965D2,
+$secondary-background-color: #ffffff,
+$third-background-color: #8965D2,
+$primary-font-color: #FFFFFF,
+$secondary-font-color: #000000,
+$third-font-color: #8965D2,
 );
 
 @use 'variables-dark';
@@ -129,6 +129,10 @@ h1 {
   a {
     color: #9c8035 !important;
   }
+}
+
+ul li {
+  color: #9c8035 !important;
 }
 
 .loadingtime-table {
