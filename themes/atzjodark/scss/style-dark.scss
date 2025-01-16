@@ -1,9 +1,9 @@
 @use 'variables/index.scss' as * with ($primary-background-color: #000000,
-$secondary-background-color: #ffffff,
-$third-background-color: #5F34B2,
-$primary-font-color: #FFFFFF,
-$secondary-font-color: #000000,
-$third-font-color: #5F34B2,
+  $secondary-background-color: #ffffff,
+  $third-background-color: #8965D2,
+  $primary-font-color: #FFFFFF,
+  $secondary-font-color: #000000,
+  $third-font-color: #8965D2,
 );
 
 @use 'variables-dark';
@@ -60,12 +60,25 @@ p {
   color: $primary-font-color;
 }
 
-.title p {
+.title p,
+.analysis-link h3 {
   color: $third-font-color !important;
+}
+
+.analysis-link h3:hover {
+  color: #9c8035 !important;
 }
 
 code {
   color: $secondary-font-color;
+}
+
+.tech-link {
+  background-color: $secondary-background-color;
+}
+
+.main a {
+  color: #9c8035;
 }
 
 // li a {
